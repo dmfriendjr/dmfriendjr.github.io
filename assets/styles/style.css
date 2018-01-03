@@ -208,18 +208,20 @@ body {
 /* Portfolio Panel */
 .portfolio-content {
 	display: flex;
+	flex-direction: row;
+	flex-grow: 1;
+	flex-wrap: wrap;
 }
 
 .project-wrapper {
-	display: flex;
-	flex-direction: column;
-	flex-shrink: 1;
-	flex-grow: 1;
+	position: relative;
+	width: 30%;
 	margin: 10px;
 	padding: 10px;
 	background-color: #042943;
 	border: 2px solid black;
 	text-align: center;
+	overflow: auto;
 }
 
 .project-title {
@@ -227,18 +229,23 @@ body {
 }
 
 .project-image {
-	display: flex;
 	width: 100%;
 	height: auto;
 	border: 1px solid black;
 	margin: 5px 0;
-	float: left;
 }
 
+.project-description {
+	margin-bottom: 65px;
+}
 
 .project-links {
 	display: flex;
-	justify-content: center;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	width: 80px;
+	left: calc(50% - 40px);
 }
 
 .project-link {
