@@ -22,38 +22,38 @@ blockquote:before, blockquote:after,
 q:before, q:after {content: ''; content: none;}
 table {border-collapse: collapse;border-spacing: 0;}
 
+/* Color pallet http://paletton.com/#uid=53q0r0k75v+73OX5AK58jrz8VnL */
+
 /* Navbar Styles */
 nav {
-	padding: 20px;
-	background-color: #06151F;
-	border-bottom: 1px solid #074470;
+	padding-top: 40px;
+	background-color: #7E97A0;
 	display: flex;
+	height: 35px; 
 }
 
 nav a {
 	text-decoration: none;
-	color: #56BBC8;
+	color: #B5BEE0;
 }
 
-
-
 .dropdown-content {
-    	display: none;
-    	position: absolute;
-    	top: 55px;
-    	left: 0px;
-    	border-radius: .4em;
-    	background-color: #06151F;
+	display: none;
+	position: absolute;
+	top: 55px;
+	left: 0px;
+	border-radius: .4em;
+	background-color: #06151F;
 	border: .025em solid #115861;	
-    	min-width: 160px;
-    	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	padding: 12px 16px;
 	opacity: 0;
 	z-index: 2;
 }	
 
 .dropdown-button:hover .dropdown-content {
-    	display: block;
+  display: block;
 	opacity: 1;
 	animation: slideIn .23s ease-in;
 }
@@ -64,74 +64,45 @@ nav a {
 }
 
 .nav-links-group {
+	flex-grow: 1;
 	text-align: right;
-	display: flex;
+	margin-right: 25px;
 }
 
-.social-links-group {
-	display: flex;
-	justify-content: flex-end;
-	flex-grow: 2;
+.nav-links-group li {
+	display: inline-block;
 }
 
 .nav-button, .dropdown-button {
-	display: flex;
 	align-self: center;
-	flex-grow: 1;
 	margin: 0 5px;
-	padding: 10px;
 	font-size: 20px;
-	line-height: 35px;
-	border-radius: .4em;
-	border: .025em solid #115861;
-	transition: background-color .2s ease-out;
+	border-color: #576E77;
+	transition: border-bottom .2s ease-out;
 }
 
 .dropdown-button {
 	position: relative;
-    	display: none;
+	display: none;
 }
 
 .nav-button:hover { 
-	background-color: #2C3A3D;
-	border: .025em solid #56BBC8;
-	transition: background-color .2s ease-in;
-}
-
-.nav-button:active {
-	transform: scale(.95);	
-}
-
-.social-button {
-	display: flex;
-	margin-right: 5px;
-	align-self: center;
-	font-size: 50px;
-	line-height: 25px;
-	transition: color .2s ease-out;
-}
-
-.social-button:hover {
-	color: #395F7B;
-}
-
-.social-button:active {
-	transform: scale(.95);
-	color: #2C3A3D;
+	border-bottom: 1px solid #576E77;
+	transition: border-bottom .2s ease-in;
 }
 
 /* General Styles */
 body { 
-	background-color: #06151F;
-	color: #56BBC8;
+	background-color: #576E77;
+	color: #B5BEE0;
 }
 
 .panel:nth-child(even) {
-	background-color: #074470;
+	background-color: #7E97A0;
 }
 
 .panel:nth-child(odd) {
-	background-color: #042943;
+	background-color: #68808A;
 }
 
 .panel {
@@ -150,8 +121,9 @@ body {
 }
 
 .panel-background-image {
-	max-width: 100%;
-	height: auto;
+	width: 100%;
+	height: 100vh;
+	margin: 0 auto;
 }
 
 .panel-image-text { 
@@ -163,35 +135,21 @@ body {
 }
 
 /* Panel Specific Styles */
-/* Intro Panel Styles */
-.intro-panel{
-	padding: 0;
-	margin: 0;
+
+/* About Panel Styles */
+.about-panel-content { 
+	text-align:center;
+	font-size: 40px;
+	padding: 50px 0;
 }
 
-.panel-scroll-prompt {
-	position: absolute;
-	font-size: 20px;
-	left: 50%;
-	bottom: 5%;
+#about-description {
+	margin-right: 5px;
 }
 
-
-.about-panel-content {
-	max-width: 80vw;
-	overflow: auto;
-	margin: 0 20px;
-}
-
-.about-text {
-	font-size: 20px;
-	text-align: left;
-	padding: 15px;
-}
-
-.profile-image { 
-	float: left;
-	padding: 15px;
+#cursor-display {
+	width: 12px;
+	display: inline-block;
 }
 
 /* Skills Panel*/
@@ -218,7 +176,8 @@ body {
 	width: 30%;
 	margin: 10px;
 	padding: 10px;
-	background-color: #042943;
+	background-color: #616880;
+	color: #B5BEE0;
 	border: 2px solid black;
 	text-align: center;
 	overflow: auto;
@@ -252,7 +211,7 @@ body {
 	display: flex;
 	align-self: center;
 	text-decoration: none;
-	color: #56BBC8;
+	color: #ADCEDB;
 	font-size: 40px;
 	margin: 10px 5px;
 }
