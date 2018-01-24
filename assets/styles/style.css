@@ -169,11 +169,12 @@ body {
 	flex-direction: row;
 	flex-grow: 1;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .project-wrapper {
 	position: relative;
-	width: 30%;
+	max-width: 40%;
 	margin: 10px;
 	padding: 10px;
 	background-color: #616880;
