@@ -152,6 +152,11 @@ body {
 	display: inline-block;
 }
 
+.personal-description {
+  font-size: 25px;
+  margin: 0 15% 0 15%;
+}
+
 /* Skills Panel*/
 .skills-container {
 	max-width: 80vw;
@@ -161,6 +166,15 @@ body {
 
 .skill-wrapper {
 	font-size: 100px;
+}
+
+.social-link {
+  text-decoration: none;
+  color: #B5BEE0;
+}
+
+.social-link:hover {
+  color: rgb(155, 164, 194)
 }
 
 /* Portfolio Panel */
